@@ -10,5 +10,5 @@ def update_screen():
     DHSS_AK_Monitor.connect('http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx')
 
 scheduler = BlockingScheduler()
-scheduler.add_job(update_screen, 'interval', minutes=2)
+scheduler.add_job(update_screen, 'interval', hours=2)
 scheduler.start()
